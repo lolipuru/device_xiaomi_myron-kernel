@@ -60,8 +60,9 @@ kernel/drivers/ptp/ptp_kvm.ko
 kernel/drivers/power/sequencing/pwrseq-core.ko
 kernel/drivers/hid/hid-uclogic-test.ko
 kernel/drivers/of/of_kunit_helpers.ko
+kernel/drivers/virt/halla/exynos-hvm.ko
 kernel/drivers/iio/test/iio-test-format.ko
-kernel/drivers/android/rust_binder.ko
+kernel/drivers/android/binder/rust_binder.ko
 kernel/drivers/pps/pps_core.ko
 kernel/drivers/bluetooth/hci_uart.ko
 kernel/drivers/bluetooth/btsdio.ko
@@ -73,7 +74,6 @@ kernel/sound/soc/soc-utils-test.ko
 kernel/net/core/dev_addr_lists_test.ko
 kernel/net/8021q/8021q.ko
 kernel/net/vmw_vsock/vmw_vsock_virtio_transport.ko
-kernel/net/tls/tls.ko
 kernel/net/can/can.ko
 kernel/net/can/can-raw.ko
 kernel/net/can/can-bcm.ko

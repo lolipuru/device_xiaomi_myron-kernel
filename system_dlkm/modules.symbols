@@ -7,11 +7,13 @@ alias symbol:__hci_cmd_sync_status bluetooth
 alias symbol:vp_modern_get_status virtio_pci_modern_dev
 alias symbol:slhc_free slhc
 alias symbol:vp_modern_avq_index virtio_pci_modern_dev
+alias symbol:cdc_ncm_fill_tx_frame cdc_ncm
 alias symbol:hci_conn_check_secure bluetooth
 alias symbol:can_send can
 alias symbol:ieee802154_unregister_hw mac802154
 alias symbol:vp_legacy_get_queue_size virtio_pci_legacy_dev
 alias symbol:can_rx_offload_del can_dev
+alias symbol:wwan_register_ops wwan
 alias symbol:free_candev can_dev
 alias symbol:ppp_register_net_channel ppp_generic
 alias symbol:kunit_init_test kunit
@@ -59,6 +61,7 @@ alias symbol:__hci_cmd_sync_sk bluetooth
 alias symbol:ieee802154_hdr_peek ieee802154
 alias symbol:slhc_uncompress slhc
 alias symbol:bt_err_ratelimited bluetooth
+alias symbol:kunit_suite_num_test_cases kunit
 alias symbol:nfc_allocate_device nfc
 alias symbol:v9fs_unregister_trans 9pnet
 alias symbol:__usb_serial_register_drivers usbserial
@@ -124,6 +127,7 @@ alias symbol:slhc_remember slhc
 alias symbol:usbnet_write_cmd_async usbnet
 alias symbol:usb_serial_generic_read_bulk_callback usbserial
 alias symbol:bt_warn_ratelimited bluetooth
+alias symbol:cdc_ncm_change_mtu cdc_ncm
 alias symbol:kunit_deactivate_static_stub kunit
 alias symbol:ptp_find_pin ptp
 alias symbol:__kunit_add_resource kunit
@@ -161,12 +165,15 @@ alias symbol:can_fd_dlc2len can_dev
 alias symbol:ieee802154_beacon_push ieee802154
 alias symbol:kunit_platform_device_alloc kunit
 alias symbol:p9_parse_header 9pnet
+alias symbol:kunit_assert_prologue kunit
 alias symbol:kunit_driver_create kunit
 alias symbol:kunit_release_action kunit
 alias symbol:l2cap_chan_send bluetooth
+alias symbol:kunit_test_case_num kunit
 alias symbol:vp_modern_generation virtio_pci_modern_dev
 alias symbol:can_bus_off can_dev
 alias symbol:kunit_add_action kunit
+alias symbol:usbnet_generic_cdc_bind cdc_ether
 alias symbol:qca_read_soc_version btqca
 alias symbol:alloc_canfd_skb can_dev
 alias symbol:rfkill_alloc rfkill
@@ -178,6 +185,7 @@ alias symbol:netfs_unbuffered_read_iter netfs
 alias symbol:ieee802154_mac_cmd_pl_pull ieee802154
 alias symbol:rfkill_set_sw_state rfkill
 alias symbol:usbnet_get_endpoints usbnet
+alias symbol:wwan_unregister_ops wwan
 alias symbol:p9_tag_lookup 9pnet
 alias symbol:ieee802154_xmit_hw_error mac802154
 alias symbol:pppox_unbind_sock pppox
@@ -190,8 +198,10 @@ alias symbol:kunit_try_catch_throw kunit
 alias symbol:baswap bluetooth
 alias symbol:can_rx_offload_get_echo_skb_queue_timestamp can_dev
 alias symbol:vp_modern_set_queue_enable virtio_pci_modern_dev
+alias symbol:zs_lookup_class_index zsmalloc
 alias symbol:p9_client_cb 9pnet
 alias symbol:vp_modern_remove virtio_pci_modern_dev
+alias symbol:cdc_ncm_select_altsetting cdc_ncm
 alias symbol:can_rx_offload_irq_finish can_dev
 alias symbol:usb_serial_generic_close usbserial
 alias symbol:hci_conn_switch_role bluetooth
@@ -220,6 +230,7 @@ alias symbol:usbnet_set_link_ksettings_mii usbnet
 alias symbol:btbcm_setup_apple btbcm
 alias symbol:l2tp_session_get_next l2tp_core
 alias symbol:vp_modern_get_features virtio_pci_modern_dev
+alias symbol:cdc_ncm_unbind cdc_ncm
 alias symbol:ptp_clock_unregister ptp
 alias symbol:usbnet_unlink_rx_urbs usbnet
 alias symbol:vp_legacy_get_features virtio_pci_legacy_dev
@@ -276,6 +287,7 @@ alias symbol:alloc_candev_mqs can_dev
 alias symbol:usbnet_device_suggests_idle usbnet
 alias symbol:vp_modern_get_num_queues virtio_pci_modern_dev
 alias symbol:btbcm_set_bdaddr btbcm
+alias symbol:kunit_kfree kunit
 alias symbol:vp_legacy_get_queue_enable virtio_pci_legacy_dev
 alias symbol:l2cap_chan_close bluetooth
 alias symbol:usbnet_manage_power usbnet
@@ -285,6 +297,7 @@ alias symbol:clk_get_kunit clk_kunit_helpers
 alias symbol:can_rx_offload_enable can_dev
 alias symbol:bt_accept_enqueue bluetooth
 alias symbol:usbnet_link_change usbnet
+alias symbol:kunit_run_tests kunit
 alias symbol:usb_serial_generic_open usbserial
 alias symbol:lowpan_register_netdevice 6lowpan
 alias symbol:zs_map_object zsmalloc
@@ -311,6 +324,7 @@ alias symbol:nfc_add_se nfc
 alias symbol:netfs_unpin_writeback netfs
 alias symbol:nfc_unregister_device nfc
 alias symbol:usbnet_get_drvinfo usbnet
+alias symbol:wwan_port_rx wwan
 alias symbol:rfkill_unregister rfkill
 alias symbol:hci_get_route bluetooth
 alias symbol:can_dropped_invalid_skb can_dev
@@ -320,6 +334,7 @@ alias symbol:l2cap_chan_list bluetooth
 alias symbol:cfg802154_set_max_associations ieee802154
 alias symbol:kunit_device_register_with_driver kunit
 alias symbol:btbcm_initialize btbcm
+alias symbol:kunit_suite_has_succeeded kunit
 alias symbol:kunit_binary_str_assert_format kunit
 alias symbol:l2tp_session_set_header_len l2tp_core
 alias symbol:can_sock_destruct can
@@ -348,6 +363,7 @@ alias symbol:can_rx_offload_add_timestamp can_dev
 alias symbol:register_candev can_dev
 alias symbol:nl802154_scan_event ieee802154
 alias symbol:nl802154_scan_done ieee802154
+alias symbol:cdc_ncm_rx_verify_nth16 cdc_ncm
 alias symbol:l2tp_session_create l2tp_core
 alias symbol:netfs_end_io_write netfs
 alias symbol:kunit_log_append kunit
@@ -356,14 +372,17 @@ alias symbol:can_get_state_str can_dev
 alias symbol:ppp_output_wakeup ppp_generic
 alias symbol:kunit_try_catch_run kunit
 alias symbol:usb_serial_generic_write_start usbserial
+alias symbol:__kunit_test_suites_init kunit
 alias symbol:vp_modern_map_vq_notify virtio_pci_modern_dev
 alias symbol:kunit_platform_device_prepare_wait_for_probe kunit
 alias symbol:vp_legacy_set_status virtio_pci_legacy_dev
 alias symbol:wpan_phy_find ieee802154
+alias symbol:wwan_port_get_drvdata wwan
 alias symbol:l2tp_session_get l2tp_core
 alias symbol:vp_modern_queue_vector virtio_pci_modern_dev
 alias symbol:usbnet_get_link usbnet
 alias symbol:__hci_cmd_sync bluetooth
+alias symbol:cdc_ncm_bind_common cdc_ncm
 alias symbol:hci_unregister_dev bluetooth
 alias symbol:nfc_se_connectivity nfc
 alias symbol:can_eth_ioctl_hwts can_dev
@@ -391,7 +410,9 @@ alias symbol:bt_sock_wait_state bluetooth
 alias symbol:netfs_start_io_write netfs
 alias symbol:rfkill_resume_polling rfkill
 alias symbol:netfs_buffered_write_iter_locked netfs
+alias symbol:wwan_remove_port wwan
 alias symbol:clk_hw_register_kunit clk_kunit_helpers
+alias symbol:usbnet_cdc_zte_rx_fixup cdc_ether
 alias symbol:bt_sock_alloc bluetooth
 alias symbol:rfkill_find_type rfkill
 alias symbol:nfc_target_lost nfc
@@ -405,6 +426,7 @@ alias symbol:nfc_proto_unregister nfc
 alias symbol:ptp_cancel_worker_sync ptp
 alias symbol:ieee802154_hdr_peek_addrs ieee802154
 alias symbol:devm_pwrseq_device_register pwrseq_core
+alias symbol:__kunit_test_suites_exit kunit
 alias symbol:usbnet_suspend usbnet
 alias symbol:btbcm_read_pcm_int_params btbcm
 alias symbol:vp_modern_queue_address virtio_pci_modern_dev
@@ -423,6 +445,7 @@ alias symbol:slhc_compress slhc
 alias symbol:kunit_unary_assert_format kunit
 alias symbol:ieee802154_configure_durations mac802154
 alias symbol:netfs_file_read_iter netfs
+alias symbol:wwan_create_port wwan
 alias symbol:hci_devcd_register bluetooth
 alias symbol:netfs_dirty_folio netfs
 alias symbol:hci_alloc_dev_priv bluetooth
@@ -452,6 +475,7 @@ alias symbol:hci_conn_security bluetooth
 alias symbol:pps_register_source pps_core
 alias symbol:can_rx_offload_queue_timestamp can_dev
 alias symbol:l2tp_recv_common l2tp_core
+alias symbol:cdc_ncm_rx_verify_ndp16 cdc_ncm
 alias symbol:usb_serial_handle_dcd_change usbserial
 alias symbol:mii_ethtool_get_link_ksettings mii
 alias symbol:hci_reset_dev bluetooth

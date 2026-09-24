@@ -43,7 +43,8 @@ kernel/drivers/usb/serial/ftdi_sio.ko
 kernel/drivers/ptp/ptp.ko
 kernel/drivers/ptp/ptp_kvm.ko
 kernel/drivers/power/sequencing/pwrseq-core.ko
-kernel/drivers/android/rust_binder.ko
+kernel/drivers/virt/halla/exynos-hvm.ko
+kernel/drivers/android/binder/rust_binder.ko
 kernel/drivers/pps/pps_core.ko
 kernel/drivers/bluetooth/hci_uart.ko
 kernel/drivers/bluetooth/btsdio.ko
@@ -52,7 +53,6 @@ kernel/drivers/bluetooth/btqca.ko
 kernel/drivers/gnss/gnss.ko
 kernel/net/8021q/8021q.ko
 kernel/net/vmw_vsock/vmw_vsock_virtio_transport.ko
-kernel/net/tls/tls.ko
 kernel/net/can/can.ko
 kernel/net/can/can-raw.ko
 kernel/net/can/can-bcm.ko

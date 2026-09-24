@@ -1,5 +1,6 @@
 kernel/arch/arm64/kvm/kvm.ko
 kernel/arch/arm64/gunyah/gunyah_hypercall.ko
+kernel/arch/arm64/crypto/sha1-ce.ko
 kernel/arch/arm64/crypto/sha2-ce.ko
 kernel/arch/arm64/crypto/sha512-ce.ko
 kernel/arch/arm64/crypto/ghash-ce.ko
@@ -234,6 +235,7 @@ kernel/drivers/tty/serial/amba-pl011.ko
 kernel/drivers/tty/serial/qcom_geni_serial.ko
 kernel/drivers/tty/serial/samsung_tty.ko
 kernel/drivers/tty/serial/sprd_serial.ko
+kernel/drivers/tty/serial/tegra-tcu.ko
 kernel/drivers/tty/serial/serial_mctrl_gpio.ko
 kernel/drivers/tty/serdev/serdev.ko
 kernel/drivers/tty/ttynull.ko
@@ -241,12 +243,14 @@ kernel/drivers/char/hw_random/rng-core.ko
 kernel/drivers/char/hw_random/iproc-rng200.ko
 kernel/drivers/char/hw_random/arm_smccc_trng.ko
 kernel/drivers/iommu/iova.ko
+kernel/drivers/iommu/pkvm-pviommu.ko
 kernel/drivers/gpu/drm/drm.ko
 kernel/drivers/gpu/drm/drm_panel_orientation_quirks.ko
 kernel/drivers/gpu/drm/drm_shmem_helper.ko
 kernel/drivers/gpu/drm/drm_kms_helper.ko
 kernel/drivers/gpu/drm/drm_mipi_dsi.ko
 kernel/drivers/gpu/drm/ttm/ttm.ko
+kernel/drivers/connector/cn.ko
 kernel/drivers/base/firmware_loader/firmware_class.ko
 kernel/drivers/base/regmap/regmap-i2c.ko
 kernel/drivers/base/regmap/regmap-spi.ko
@@ -430,7 +434,7 @@ kernel/drivers/hid/usbhid/usbhid.ko
 kernel/drivers/vhost/vhost_vsock.ko
 kernel/drivers/vhost/vhost.ko
 kernel/drivers/vhost/vhost_iotlb.ko
-kernel/drivers/staging/android/ashmem_rust.ko
+kernel/drivers/staging/android/ashmem.ko
 kernel/drivers/mailbox/hi3660-mailbox.ko
 kernel/drivers/mailbox/hi6220-mailbox.ko
 kernel/drivers/mailbox/sun6i-msgbox.ko
@@ -597,6 +601,7 @@ kernel/net/ipv4/netfilter/nf_dup_ipv4.ko
 kernel/net/ipv4/inet_diag.ko
 kernel/net/ipv4/tcp_diag.ko
 kernel/net/ipv4/udp_diag.ko
+kernel/net/ipv4/tcp_bbr.ko
 kernel/net/ipv4/tcp_cubic.ko
 kernel/net/xfrm/xfrm_algo.ko
 kernel/net/xfrm/xfrm_user.ko
